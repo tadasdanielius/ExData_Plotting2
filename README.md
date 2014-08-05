@@ -29,7 +29,7 @@ plot(d$aggregated,
      ylab = "Total PM2.5 emmision")
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot1.png "Plot 1")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot1.png "Plot 1")
 
 
 2. Have total emissions from PM2.5 decreased in the **Baltimore City**, Maryland (```fips == "24510"```) from 1999 to 2008? Use the **base** ###### Plotting system to make a plot answering this question.
@@ -56,7 +56,7 @@ barplot(d$baltimore_aggregated$Emissions,
 
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot2.png "Plot 2")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot2.png "Plot 2")
 
 
 3. Of the four types of sources indicated by the ```type``` (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for **Baltimore City**? Which have seen increases in emissions from 1999–2008? Use the **ggplot2** ###### Plotting system to make a plot answer this question.
@@ -85,7 +85,7 @@ qp <- qplot(x=factor(year), y=Emissions, fill=type,
 grid.arrange(g,qp);
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot3.png "Plot 3")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot3.png "Plot 3")
 
 4. Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
 
@@ -113,7 +113,7 @@ g <- ggplot(d$combustion_data,aes(factor(year),Emissions)) +
   labs(title="Coal Combustion Source Emissions in US 1999-2008");
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot4.png "Plot 4")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot4.png "Plot 4")
 
 5. How have emissions from motor vehicle sources changed from 1999–2008 in **Baltimore City**?
 
@@ -141,7 +141,7 @@ g <- ggplot(d$baltimore_vehicle_data,aes(factor(year),Emissions)) +
   labs(title="Motor Vehicle Source Emissions in Baltimore (1999-2008)");
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot5.png "Plot 5")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot5.png "Plot 5")
 
 6. Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in **Los Angeles County**, California (```fips == "06037"```). Which city has seen greater changes over time in motor vehicle emissions?
 
@@ -181,4 +181,4 @@ g1 <- ggplot(d$Baltimore_LA_vehicle_data, aes(x=factor(year), y=Emissions, fill=
 grid.arrange(g,g1);
 ```
 
-![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_###### Plotting2/master/plot6.png "Plot 6")
+![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot6.png "Plot 6")
