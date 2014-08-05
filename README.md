@@ -10,7 +10,7 @@ The overall goal of this assignment is to explore the National Emissions Invento
 
 ### Questions ###
 
-1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the **base** ###### Plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
+1. Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? Using the **base** Plotting system, make a plot showing the total PM2.5 emission from all sources for each of the years 1999, 2002, 2005, and 2008.
 
 ###### Data Preparation
 
@@ -32,7 +32,7 @@ plot(d$aggregated,
 ![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot1.png "Plot 1")
 
 
-2. Have total emissions from PM2.5 decreased in the **Baltimore City**, Maryland (```fips == "24510"```) from 1999 to 2008? Use the **base** ###### Plotting system to make a plot answering this question.
+2. Have total emissions from PM2.5 decreased in the **Baltimore City**, Maryland (```fips == "24510"```) from 1999 to 2008? Use the **base** Plotting system to make a plot answering this question.
 
 ###### Data Preparation
 
@@ -59,7 +59,7 @@ barplot(d$baltimore_aggregated$Emissions,
 ![alt text](https://raw.githubusercontent.com/tadasdanielius/ExData_Plotting2/master/plot2.png "Plot 2")
 
 
-3. Of the four types of sources indicated by the ```type``` (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for **Baltimore City**? Which have seen increases in emissions from 1999–2008? Use the **ggplot2** ###### Plotting system to make a plot answer this question.
+3. Of the four types of sources indicated by the ```type``` (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for **Baltimore City**? Which have seen increases in emissions from 1999–2008? Use the **ggplot2** Plotting system to make a plot answer this question.
 
 ###### Data Preparation
 
